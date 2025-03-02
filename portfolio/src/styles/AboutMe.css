@@ -1,0 +1,125 @@
+/* Remove horizontal scrollbar */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Ensure Full Width and Center Alignment */
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the whole section */
+    justify-content: center; /* Vertically center */
+    width: 100vw; /* Ensures no extra horizontal space */
+    max-width: 100%; /* Prevents overflow */
+    height: 100vh; /* Set height to fit screen */
+    margin: 0;
+    padding: 0 2rem; /* Avoid extra padding that causes scrolling */
+    background-color: #FFF1DC;
+    border-radius: 0;
+    overflow: hidden; /* Ensure no scrolling */
+}
+
+/* Wrapper for content (image + text side by side) */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center everything */
+    gap: 4rem; /* Space between profile picture and text */
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 5rem; /* Increased space between the navbar and profile picture */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Profile image container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center image and icons */
+    justify-content: center;
+    width: 320px;
+}
+
+/* Profile image */
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Social links below profile image */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem; /* Adjusted spacing */
+    margin-top: 2rem; /* Space between profile picture and icons */
+}
+
+/* Social icons */
+.social-icon {
+    width: 60px; /* Keep size consistent */
+    height: 60px;
+    object-fit: contain; /* Ensures images maintain their aspect ratio */
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Bio container */
+.bio-container {
+    text-align: left;
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Increased line spacing */
+}
+
+/* Bio text styling */
+.bio-text {
+    color: #000;
+    font-size: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me-section {
+        height: auto; /* Ensure mobile doesn't force overflow */
+        padding-top: 2rem; /* Adjusted spacing */
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2.5rem; /* Increased gap for smaller screens */
+        margin-top: 3rem; /* Ensures spacing from navbar */
+    }
+
+    .profile-container {
+        width: 250px;
+    }
+
+    .social-links {
+        gap: 2rem; /* Adjusted spacing */
+        margin-top: 1.5rem;
+    }
+
+    .social-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .bio-container {
+        text-align: center;
+    }
+
+    .bio-text {
+        font-size: 20px;
+    }
+}

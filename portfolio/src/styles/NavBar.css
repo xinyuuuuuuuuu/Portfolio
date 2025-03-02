@@ -1,0 +1,67 @@
+/* Navbar Full Width */
+.navbar {
+    width: 100%; /* Ensures full width */
+    height: 80px; /* Increased height for more space above 'Xin Yu' */
+    background-color: #67172C; /* Primary color */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* Keeps logo on left, nav items on right */
+    align-items: center;
+    padding: 10px 40px; /* Adjust left/right spacing */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keep navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo Image */
+  .logo {
+    height: 55px; /* Adjusted for better spacing */
+    max-width: 160px; /* Slightly increased size */
+    object-fit: contain;
+  }
+  
+  /* Navigation Links - Positioned to the right */
+  .nav-links {
+    display: flex;
+    gap: 40px; /* Space between nav items */
+    margin-left: auto; /* Pushes nav items to the right */
+    padding-right: 80px; /* ✅ Increased spacing between last item and right edge */
+  }
+  
+  /* Individual Nav Item */
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-item:hover {
+    opacity: 0.8;
+  }
+  
+  /* Icons Styling */
+  .nav-item svg {
+    font-size: 22px;
+  }
+  
+  /* Text Styling */
+  .nav-item span {
+    font-size: 14px;
+  }
+  
+  /* Prevent content from being hidden under the navbar */
+  body {
+    padding-top: 90px; /* Adjusted for new navbar height */
+  }
+  
