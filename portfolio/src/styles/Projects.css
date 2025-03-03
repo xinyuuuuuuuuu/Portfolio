@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Project Section */
+.projects-section {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: #a3b178;
+    width: 100%;
+}
+
+/* Project Grid - Centers and Adds Spacing */
+.project-grid-figma,
+.project-grid-webdev {
+    display: flex;
+    justify-content: center;
+    gap: 4rem; /* Increased spacing between projects */
+    width: 100%;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns projects properly */
+}
+
+/* Centers Portrait Projects in a Separate Row */
+.portrait-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem; /* Increased space between portrait and landscape rows */
+}
+
+/* Project Categories */
+.project-category {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-bottom: 3rem; /* Adds space between categories */
+}
+
+/* Category Title */
+.category-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Project Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Slightly larger for better visibility */
+    min-height: 650px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    margin: 2rem auto; /* Ensures spacing between each project */
+}
+
+/* Special Styling for Portrait Projects */
+.project-card-portrait {
+    max-width: 500px; /* Adjusted for portrait layout */
+    min-height: 750px; /* Taller for portrait */
+}
+
+/* Image Adjustments */
+.project-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Larger portrait images */
+.project-image-portrait {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain; /* Prevents cropping */
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    min-height: 80px; /* Ensures all titles take up equal space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+    text-align: center;
+    min-height: 60px;
+}
+
+/* Button Styling */
+.project-tag {
+    margin-top: auto;
+    background-color: #5a4033;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-tag:hover {
+    background-color: #442e24;
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-grid-figma,
+    .project-grid-webdev {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+
+    .category-title {
+        font-size: 1.6rem;
+    }
+}

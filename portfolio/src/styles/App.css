@@ -1,0 +1,7 @@
+html, body {
+    overflow-x: hidden; /* Keep horizontal scroll disabled */
+    overflow-y: auto; /* Allow vertical scrolling */
+    scroll-behavior: smooth;
+}
+
+  

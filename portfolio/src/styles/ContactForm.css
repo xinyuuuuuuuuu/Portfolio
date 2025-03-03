@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.contact-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #a3b178;
+    padding: 3rem 2rem;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Center Contact Title */
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+/* Name, Email, and Message Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Labels */
+label {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 40%; /* Aligns with the input field width */
+}
+
+/* Input Fields */
+input, textarea {
+    width: 40%; /* Decrease width */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+/* Message Box */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #67172C;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #4e101f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    input, textarea {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+}

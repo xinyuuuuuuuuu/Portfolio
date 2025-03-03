@@ -1,27 +1,37 @@
-/* Remove horizontal scrollbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    height: auto; /* Allow page to expand */
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable scrolling */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
+
+
 
 /* Ensure Full Width and Center Alignment */
 .about-me-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the whole section */
-    justify-content: center; /* Vertically center */
-    width: 100vw; /* Ensures no extra horizontal space */
-    max-width: 100%; /* Prevents overflow */
-    height: 100vh; /* Set height to fit screen */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
     margin: 0;
-    padding: 0 2rem; /* Avoid extra padding that causes scrolling */
     background-color: #FFF1DC;
     border-radius: 0;
-    overflow: hidden; /* Ensure no scrolling */
+    overflow: visible;
+    padding-top: 80px;
+    padding-bottom: 0; /* Remove extra padding */
 }
+
+
+
 
 /* Wrapper for content (image + text side by side) */
 .content-wrapper {
@@ -32,7 +42,7 @@ html, body {
     gap: 4rem; /* Space between profile picture and text */
     width: 80%;
     max-width: 1200px;
-    margin-top: 5rem; /* Increased space between the navbar and profile picture */
+    margin-top: 1rem; /* Increased space between the navbar and profile picture */
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
@@ -78,12 +88,15 @@ html, body {
     max-width: 600px;
     font-size: 1.1rem;
     line-height: 1.8; /* Increased line spacing */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Lighter weight for bio */
 }
 
 /* Bio text styling */
 .bio-text {
     color: #000;
     font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive Design */

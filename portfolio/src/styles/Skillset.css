@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.skillset-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f5deb3; /* Light beige */
+    padding: 4rem 2rem; /* Increased padding */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: 700;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+/* Soft Skills Section */
+.soft-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Increased space between skills */
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.skill-name {
+    font-size: 1.5rem; /* Increased font size */
+    font-weight: normal; /* Removed bold */
+    color: black;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 15px; /* Increased bar height */
+    background-color: #eee;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #5a4033;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.progress-text {
+    font-size: 1rem; /* Increased font size */
+    color: white;
+    font-weight: bold;
+}
+
+/* Space Between Soft Skills and Technical Skills */
+.sub-title {
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold;
+    margin-top: 4rem; /* Increased space between sections */
+    margin-bottom: 3rem;
+    color: black;
+}
+
+/* Technical Skills */
+.technical-skills {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Increased spacing between icons */
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.skill-icon img {
+    width: 150px; /* Increased icon size */
+    height: 150px;
+    object-fit: contain;
+}
