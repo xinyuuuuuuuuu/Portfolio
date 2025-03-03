@@ -14,7 +14,16 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message Sent!"); // Replace with actual form submission logic
+
+    // Simulating form submission success
+    alert("Message Sent!");
+
+    // ✅ Clear the form fields
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
