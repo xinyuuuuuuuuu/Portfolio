@@ -1,7 +1,7 @@
 import React from "react";
 import { FaUser, FaListAlt, FaStar, FaEnvelope } from "react-icons/fa"; // ✅ Import FaEnvelope for Contact
 import logo from "../assets/XinYu.png";
-import "../styles/Navbar.css";
+import "../styles/NavBar.css";
 
 interface NavItemProps {
   icon: React.ReactElement;
